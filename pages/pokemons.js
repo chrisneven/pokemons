@@ -21,6 +21,9 @@ const Pokemons = () => {
     return (
         <div>
             <Page page={page} />
+            <div hidden>
+                <Page page={page + 1} />
+            </div>
             <div style={{ display: 'flex' }}>
                 <button
                     onClick={() => setPage(current => Math.max(current - 1, 0))}
